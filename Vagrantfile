@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
     config.vm.define vm_name="tfe" do |tfe|
-      tfe.vm.box = "vivien/bionic64"
+      tfe.vm.box = "bento/ubuntu-18.04"
       tfe.vm.hostname = "tfe"
       tfe.vm.network "private_network", ip: "192.168.50.10"
       tfe.vm.provision "shell", path: "scripts/install-tfe.sh", privileged: true
