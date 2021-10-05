@@ -1,4 +1,4 @@
-agrant.configure("2") do |config|
+Vagrant.configure("2") do |config|
     config.vm.define vm_name="tfe" do |tfe|
       tfe.vm.box = "vivien/bionic64"
       tfe.vm.hostname = "tfe"
